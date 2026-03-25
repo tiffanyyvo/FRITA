@@ -27,11 +27,11 @@ class Ui_Client(object):
         palette.setBrush(QtGui.QPalette.Active, QtGui.QPalette.Window, brush)
         Client.setPalette(palette)
         font = QtGui.QFont()
-        font.setFamily("Candara")
+        font.setFamily("Cominc Sans MS")
         font.setPointSize(10)
         Client.setFont(font)
         Client.setStyleSheet("QWidget{\n"
-"background:#484848;\n"
+"background:#1a1a2e;\n"
 "}\n"
 "QAbstractButton{\n"
 "border-style:none;\n"
@@ -408,9 +408,9 @@ class Ui_Client(object):
 
     def retranslateUi(self, Client):
         _translate = QtCore.QCoreApplication.translate
-        Client.setWindowTitle(_translate("Client", "Freenove"))
+        Client.setWindowTitle(_translate("Client", "Frita"))
         self.Btn_ForWard.setText(_translate("Client", "Forward"))
-        self.name.setText(_translate("Client", "Freenove"))
+        self.name.setText(_translate("Client", "Frita"))
         self.Btn_Turn_Left.setText(_translate("Client", "Turn Left"))
         self.Btn_BackWard.setText(_translate("Client", "Backward"))
         self.Btn_Turn_Right.setText(_translate("Client", "Turn Right"))
