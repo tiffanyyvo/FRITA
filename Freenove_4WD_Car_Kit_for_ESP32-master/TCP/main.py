@@ -10,7 +10,6 @@ import time
 from threading import Timer, Thread
 from PIL import Image
 import string
-
 from Command import COMMAND as cmd
 from Thread import *
 from Client_Ui import Ui_Client
@@ -64,7 +63,7 @@ class mywindow(QWidget, Ui_Client):
         self.setWindowIcon(QIcon(icon_path))
         self.update_video_pixmap()
 
-        ipValidator = QRegExpValidator(QRegExp('^((2[0-4]\d|25[0-5]|\d?\d|1\d{2})\.){3}(2[0-4]\d|25[0-5]|[01]?\d\d?)$'))
+        ipValidator = QRegExpValidator(QRegExp(r'^((2[0-4]\d|25[0-5]|\d?\d|1\d{2})\.){3}(2[0-4]\d|25[0-5]|[01]?\d\d?)$'))
         self.IP.setValidator(ipValidator)
         
         self.TCP=VideoStreaming()
